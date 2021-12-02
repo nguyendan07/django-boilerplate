@@ -7,5 +7,6 @@ Fully featured boilerplates by nature are opinionated. This is not the goal here
 ## Usage
 1. git clone https://github.com/nguyendan07/django-boilerplate
 2. docker compose up -d --build
-3. docker compose exec web python manage.py migrate
-4. Hack away
+3. docker compose exec web export DATABASE_URL=postgres://postgres:postgres@db:5432/postgres
+4. docker compose exec web python manage.py migrate
+5. Hack away
