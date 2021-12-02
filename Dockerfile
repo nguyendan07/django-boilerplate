@@ -12,6 +12,7 @@ RUN pip install --upgrade pip
 RUN pip install poetry
 
 # Install only dependencies:
-RUN poetry install --no-root --no-dev
+RUN poetry export -f requirements.txt --output requirements.txt
+RUN pip install -r requirements.txt
 
 COPY . /code/
