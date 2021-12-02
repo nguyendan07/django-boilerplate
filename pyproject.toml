@@ -6,7 +6,8 @@ authors = ["Nguyen Van Dan <nguyenvdan07@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-Django = "3.2.*"
+Django = "^3.2.9"
+psycopg2-binary = "^2.9.2"
 
 [tool.poetry.dev-dependencies]
 isort = "^5.10.1"
